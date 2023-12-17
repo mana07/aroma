@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as m;
+
+.p-method{
+  margin-bottom: 10%;
+  @include m.mq(sp) {
+    margin-bottom: 20%;
+  }
+  &_block2{
+    margin: 7% auto;
+    @include m.mq(sp) {
+      margin: 15% auto;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "../../foundation/mixin" as m;
+
+.p-kind{
+  background-color: #4D5454;
+  h1{
+    padding-top: 10%;
+  }
+  &_item{
+    width: 80%;
+    margin: 0 auto 5% auto;
+    max-width: 960px;
+  }
+}
+
+.p-fgr{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 960px;
+  @include m.mq(sp) {
+    flex-direction: column;
+  }
+  &_mainimg{
+    width: 48%;
+    @include m.mq(sp) {
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &_button{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include m.mq(sp) {
+      width: 100%;
+      margin-top: 10%;
+    }
+  }
+}

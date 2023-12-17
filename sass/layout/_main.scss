@@ -1,0 +1,23 @@
+$sp: 740px;
+//ここでmax-widthを指定
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+
+.l-main{
+  width: 100%;
+  > img{
+    left: 0;
+    top: 109px;
+    width: 100%;
+  }
+  &_box{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+ 

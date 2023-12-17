@@ -1,0 +1,135 @@
+@use "../../foundation/mixin" as m;
+
+.c-button{
+  background-color: #B7B8B8;
+  border: 2px solid #2F3333;
+  padding: 1% 2% 9% 2%;
+  width: 44%;
+  height: 10%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  max-width: 960px;
+  @include m.mq(sp) {
+    padding: 3% 2%;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  &:nth-child(3){
+    @include m.mq(sp) {
+      margin: 5% 0;
+    }
+  }
+  &:nth-child(4){
+    @include m.mq(sp) {
+      margin: 5% 0;
+    }
+  }
+  p{
+    font-family: "ta-oonishi", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    align-self: center;
+    padding-right: 10%;
+    font-size: 2vw;
+    z-index: 5;
+    position: relative;
+    @include m.mq(sp) {
+      font-size: 4vw;
+      margin: 8% 0;
+    }
+  }
+  &_illust{
+    width: 50%;
+    transform: rotate(15deg);
+    position: absolute;
+    top: -15%;
+    right: -10%;
+    opacity: 0.8;
+    z-index: 3;
+  }
+  .citrus{
+    position: absolute;
+    top: 10%;
+    right: -10%;
+}
+  .rose{
+    position: absolute;
+    top: 10%;
+    right: -10%;
+  }
+  &_circle{
+    border-radius: 50%;
+    width: 25%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    opacity: 0.7;
+    z-index: 1;
+    
+  }
+  .purple{
+    background-color: #9D97AA;
+  }
+  .green{
+    background-color: #7C998B;
+  }
+  .yellow{
+    background-color: #C0C086;
+  }
+  .pink{
+    background-color: #B592B0;
+  }
+  .lightgreen{
+    background-color: #99B499;
+  }
+  .orange{
+    background-color: #C0B286;
+  }
+}
+
+.c-online{
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+  padding-bottom: 10%;
+  position: relative;
+  @include m.mq(sp) {
+    padding-bottom: 20%;
+  }
+  img{
+    position: absolute;
+    top: -17%;
+    right: 26%;
+    width: 7%;
+    @include m.mq(sp) {
+      top: -25%;
+      left: 8%;
+      width: 15%;
+  }
+  }
+  a{
+    border: 2px solid #2F3333;
+    border-radius: 10px;
+    background-color: #C5C8C8;
+    width: 25%;
+    padding: 2% 3%;
+    text-decoration: none;
+    color: #2F3333;
+    text-wrap: nowrap;
+    font-size: 1.3vw;
+    @include m.mq(sp) {
+      font-size: 3vw;
+      width: 80%;
+    }
+  }
+}
+
+// font-family: "adorn-garland", sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
+

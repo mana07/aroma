@@ -1,0 +1,107 @@
+@use "../foundation/mixin" as m;
+
+.l-header{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    > img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include m.mq(tab) {
+        height: 100vh;
+         object-position: -100px;
+      }
+    }
+  .l-nav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 760px;
+      width: 100%;
+      position: absolute;
+      @include m.mq(sp) {
+        box-sizing: border-box;
+        width: auto;
+      }
+    > a{
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      font-size: 34px;
+      border: solid 3px black;
+      padding: 11px 29px 12px 28px;
+      @include m.mq(sp) {
+        font-size: 24px;
+        align-self: center;
+
+      }
+    }
+    &_a{
+      display: flex;
+      text-align: center;
+      a{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-size: 34px;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        @include m.mq(sp) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .u-nav{
+      &_about{
+        margin-right: 8px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      &_works{
+        padding-left: 35px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        @include m.mq(sp) {
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+  }
+  &_title{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 40%;
+    @include m.mq(sp) {
+      width: 50%;
+      position: absolute;
+      
+    }
+    p{
+      font-family: "adorn-garland", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #D5CE77;
+      font-size: 5vw;
+      text-shadow: 2px 2px 2px #8d8a8a;
+      @include m.mq(sp) {
+        font-size: 8vw;
+      }
+      &:nth-child(1){
+        margin-bottom: 0;
+      }
+      &:nth-child(2){
+        margin-top: -10%;
+        text-align: end;
+      }
+    }
+  }
+}

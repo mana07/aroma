@@ -1,0 +1,47 @@
+@use "../../foundation/mixin" as m;
+
+.p-review{
+  position: relative;
+  width: 100%;
+  @include m.mq(sp) {
+    padding-bottom: 10%;
+  }
+  h1{
+    padding-top: 10%;
+    padding-bottom: 7%;
+    margin: 0 auto;
+  }
+  &_box{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 960px;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overflow-x: hidden;
+  }
+}
+
+.p-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #4d4d4d;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &.left{
+    left: 0;
+  }
+  &.right{
+    right: 0;
+  }
+  &.hide{
+    display: none;
+  }
+}
