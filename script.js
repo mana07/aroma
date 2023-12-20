@@ -130,3 +130,17 @@ document.querySelectorAll('.right').forEach(elm => {
 		div.scrollLeft += (div.clientWidth / 2);
 	};
 });
+
+$(function(){
+  $(".openbtn").click(function(){
+    $(this).toggleClass('active');
+    $(".sp-menu").toggleClass('active');
+  });
+});
+
+$(function(){
+  $(".sp-link").click(function(){
+    $(".openbtn").removeClass('active');
+    $(".sp-menu").removeClass('active');
+  });
+});

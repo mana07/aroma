@@ -5,6 +5,7 @@
 @use "foundation/_reset";
 @use "foundation/_base";
 @use "foundation/_mixin";
+@use "foundation/_animation";
 
 // ==========================================================================
 // Layout
@@ -28,6 +29,7 @@
    @use "object/component/_title";
    @use "object/component/_js";
    @use "object/component/_block";
+   @use "object/component/_hamburger";
 
 // -----------------------------------------------------------------
 // Project

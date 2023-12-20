@@ -1,0 +1,70 @@
+@mixin keyframes($animation-name){
+  @-webkit-keyframes #{$animation-name}{
+    @content;
+  }
+  @-moz-keyframes #{$animation-name}{
+    @content;
+  }
+  @keyframes #{$animation-name}{
+    @content;
+  }
+}
+
+@mixin animation($animation-name){
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-delay: both;
+}
+
+@include keyframes(openMenu){
+  0%{
+    border-radius: 0 0 0 100%;
+    width: 10%;
+    height: 10vh;
+    opacity: 0.6;
+  }
+
+ 100%{
+  border-radius: 0 0 0 50px;
+  width: 50%;
+  height: 100vh;
+  opacity: 1;
+  overflow: auto;
+ }
+}
+
+@include keyframes(openMenu-sp){
+  0%{
+    border-radius: 0 0 0 100%;
+    width: 10%;
+    height: 10vh;
+    opacity: 0.6;
+  }
+
+ 100%{
+  border-radius: 0 0 0 50px;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  overflow: auto;
+ }
+}
+
+@include keyframes(leftIn){
+  0%{
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  50%{
+    transform: translateY(7px);
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

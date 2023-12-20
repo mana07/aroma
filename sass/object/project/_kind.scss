@@ -23,6 +23,7 @@
   }
   &_mainimg{
     width: 48%;
+    padding-top: 56px;
     @include m.mq(sp) {
       width: 100%;
     }
@@ -31,7 +32,13 @@
     }
   }
   &_button{
+    display: flex;
+    flex-direction: column;
     width: 48%;
+  }
+  .p-button{
+    &_box{
+      width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,5 +46,38 @@
       width: 100%;
       margin-top: 10%;
     }
+    }
   }
+}
+
+.p-online{
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+  padding-bottom: 10%;
+  position: relative;
+  @include m.mq(sp) {
+    padding-bottom: 20%;
+  }
+  img{
+    position: absolute;
+    top: -17%;
+    right: 26%;
+    width: 7%;
+    @include m.mq(sp) {
+      top: -25%;
+      left: 8%;
+      width: 15%;
+  }
+  }
+  a{
+    width: 25%;
+    padding: 2% 3%;
+    font-size: 1.3vw;
+    @include m.mq(sp) {
+      font-size: 3vw;
+      width: 80%;
+    }
+  }
+
 }
