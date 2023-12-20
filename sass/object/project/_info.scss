@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as m;
 
 .p-cont{
-    background-image: url(/images/background-img.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/background-img.png?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -16,7 +16,7 @@
     }
 
   &_concept{
-    background-image: url(/images/black.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
     color: #D7E8E8;
     a{
       border: 1px solid #D7E8E8;
@@ -25,16 +25,16 @@
     }
   }
   &_history{
-    background-image: url(/images/white.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
     a{
       border: 1px solid #4D5454;
       padding: 3% 5%;
     }
   }
   &_shop{
-    background-image: url(/images/white.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
     @include m.mq(sp) {
-      background-image: url(/images/black.png);
+      background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
       color: #D7E8E8;
     }
     a{
@@ -46,10 +46,10 @@
     }
   }
   &_sns{
-    background-image: url(/images/black.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
     color: #D7E8E8;
     @include m.mq(sp) {
-      background-image: url(/images/white.png);
+      background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
       color: #4D5454;
     }
   }

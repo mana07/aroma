@@ -1098,7 +1098,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 48%;
+  width: 100%;
 }
 .p-fgr .p-button_box {
   width: 100%;
@@ -1228,7 +1228,7 @@ body {
 }
 
 .p-cont {
-  background-image: url(/images/background-img.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/background-img.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1254,7 +1254,7 @@ body {
   }
 }
 .p-cont_concept {
-  background-image: url(/images/black.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
   color: #D7E8E8;
 }
 .p-cont_concept a {
@@ -1263,18 +1263,18 @@ body {
   cursor: pointer;
 }
 .p-cont_history {
-  background-image: url(/images/white.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
 }
 .p-cont_history a {
   border: 1px solid #4D5454;
   padding: 3% 5%;
 }
 .p-cont_shop {
-  background-image: url(/images/white.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
 }
 @media screen and (max-width: 540px) {
   .p-cont_shop {
-    background-image: url(/images/black.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
     color: #D7E8E8;
   }
 }
@@ -1288,12 +1288,12 @@ body {
   }
 }
 .p-cont_sns {
-  background-image: url(/images/black.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
   color: #D7E8E8;
 }
 @media screen and (max-width: 540px) {
   .p-cont_sns {
-    background-image: url(/images/white.png);
+    background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
     color: #4D5454;
   }
 }
