@@ -4,6 +4,9 @@
   background-color: #4D5454;
   h1{
     padding-top: 10%;
+    @include m.mq(sp) {
+    padding-top: 15%;
+    }
   }
   &_item{
     width: 80%;
@@ -26,6 +29,7 @@
     padding-top: 56px;
     @include m.mq(sp) {
       width: 100%;
+      padding-top: 0;
     }
     img{
       width: 100%;
@@ -34,9 +38,17 @@
   &_button{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 48%;
+    @include m.mq(sp) {
+      width: 100%;
+    }
   }
   .p-button{
+    &_text{
+      p{
+        color: #D7E8E8;
+      }
+    }
     &_box{
       width: 100%;
     display: flex;
@@ -44,7 +56,6 @@
     flex-wrap: wrap;
     @include m.mq(sp) {
       width: 100%;
-      margin-top: 10%;
     }
     }
   }
@@ -77,6 +88,7 @@
     @include m.mq(sp) {
       font-size: 3vw;
       width: 80%;
+      padding: 4% 3%;
     }
   }
 

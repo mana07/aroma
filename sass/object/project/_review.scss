@@ -18,7 +18,12 @@
     max-width: 960px;
     scroll-behavior: smooth;
     scroll-snap-align: center;
+    scroll-snap-type: both mandatory;
     overflow-x: hidden;
+    @include m.mq(sp) {
+      overflow-x: hidden;
+      width: 100%;
+    }
   }
 }
 

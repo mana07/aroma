@@ -81,7 +81,7 @@
     right: 10%;
     width: 40%;
     @include m.mq(sp) {
-      width: 50%;
+      width: 70%;
       position: absolute;
       
     }
@@ -93,7 +93,7 @@
       font-size: 5vw;
       text-shadow: 2px 2px 2px #8d8a8a;
       @include m.mq(sp) {
-        font-size: 8vw;
+        font-size: 12vw;
       }
       &:nth-child(1){
         margin-bottom: 0;

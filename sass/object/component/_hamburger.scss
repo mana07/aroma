@@ -79,6 +79,7 @@
       }
 
       ul{
+        padding-left: 0;
         li{
           display: block;
           margin: 7% auto;
@@ -86,6 +87,8 @@
           text-align: left;
           width: 50%;
           list-style: none;
+          @include m.mq(tab) {
+          }
           a{
             text-decoration: none;
             color: #fff;
@@ -120,6 +123,12 @@
   a{
     padding: 3%;
     font-size: 1.3vw;
+    @include m.mq(tab) {
+      font-size: 1.9vw;
+    }
+    @include m.mq(sp) {
+      font-size: 2.5vw;
+    }
   }
 } 
 

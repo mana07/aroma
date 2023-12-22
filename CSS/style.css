@@ -1,10 +1,11 @@
 @charset "UTF-8";
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "yu-gothic-pr6n", sans-serif;
+  font-family: "yu-gothic-pr6n";
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -222,7 +223,7 @@ body {
 }
 @media screen and (max-width: 540px) {
   .l-header_title {
-    width: 50%;
+    width: 70%;
     position: absolute;
   }
 }
@@ -236,7 +237,7 @@ body {
 }
 @media screen and (max-width: 540px) {
   .l-header_title p {
-    font-size: 8vw;
+    font-size: 12vw;
   }
 }
 .l-header_title p:nth-child(1) {
@@ -395,20 +396,20 @@ body {
 .c-ttl {
   font-size: 2vw;
   padding-top: 10%;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
   text-align: center;
   margin: 0;
 }
 @media screen and (max-width: 768px) {
   .c-ttl {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 @media screen and (max-width: 540px) {
   .c-ttl {
     font-size: 5vw;
     padding-top: 20%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
   }
 }
 
@@ -551,12 +552,18 @@ body {
   z-index: 5;
   font-size: 2vw;
 }
+@media screen and (max-width: 768px) {
+  .c-method h2 {
+    font-size: 3vw;
+  }
+}
 @media screen and (max-width: 540px) {
   .c-method h2 {
     font-size: 5vw;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+    width: 30%;
   }
 }
 .c-method p {
@@ -564,6 +571,11 @@ body {
   text-align: left;
   padding: 3% 6% 3% 0;
   font-size: 1.3vw;
+}
+@media screen and (max-width: 768px) {
+  .c-method p {
+    font-size: 2vw;
+  }
 }
 @media screen and (max-width: 540px) {
   .c-method p {
@@ -662,7 +674,8 @@ body {
   width: 25%;
   padding: 4% 3%;
   color: #D7E8E8;
-  margin-right: 5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -817,6 +830,9 @@ body {
             animation-delay: both;
   }
 }
+.sp-nav .sp-menu ul {
+  padding-left: 0;
+}
 .sp-nav .sp-menu ul li {
   display: block;
   margin: 7% auto;
@@ -877,6 +893,16 @@ body {
   padding: 3%;
   font-size: 1.3vw;
 }
+@media screen and (max-width: 768px) {
+  .p-burger a {
+    font-size: 1.9vw;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-burger a {
+    font-size: 2.5vw;
+  }
+}
 
 .p-about {
   display: -webkit-box;
@@ -902,7 +928,7 @@ body {
 .p-about_img {
   position: relative;
   width: 40%;
-  background-image: url(/images/background1.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/background1.png?raw=true);
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -947,7 +973,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .p-preface {
-    padding-left: 0;
+    padding-left: 10%;
     display: grid;
     grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
@@ -977,7 +1003,7 @@ body {
 }
 
 .p-effect {
-  background-image: url(/images/background3.png);
+  background-image: url(https://github.com/mana07/aroma/blob/main/images/background3.png?raw=true);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -1048,6 +1074,11 @@ body {
 .p-kind h1 {
   padding-top: 10%;
 }
+@media screen and (max-width: 540px) {
+  .p-kind h1 {
+    padding-top: 15%;
+  }
+}
 .p-kind_item {
   width: 80%;
   margin: 0 auto 5% auto;
@@ -1083,6 +1114,7 @@ body {
 @media screen and (max-width: 540px) {
   .p-fgr_mainimg {
     width: 100%;
+    padding-top: 0;
   }
 }
 .p-fgr_mainimg img {
@@ -1098,7 +1130,15 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 48%;
+}
+@media screen and (max-width: 540px) {
+  .p-fgr_button {
+    width: 100%;
+  }
+}
+.p-fgr .p-button_text p {
+  color: #D7E8E8;
 }
 .p-fgr .p-button_box {
   width: 100%;
@@ -1117,7 +1157,6 @@ body {
 @media screen and (max-width: 540px) {
   .p-fgr .p-button_box {
     width: 100%;
-    margin-top: 10%;
   }
 }
 
@@ -1161,6 +1200,7 @@ body {
   .p-online a {
     font-size: 3vw;
     width: 80%;
+    padding: 4% 3%;
   }
 }
 
@@ -1190,7 +1230,16 @@ body {
   max-width: 960px;
   scroll-behavior: smooth;
   scroll-snap-align: center;
+  -webkit-scroll-snap-type: both mandatory;
+      -ms-scroll-snap-type: both mandatory;
+          scroll-snap-type: both mandatory;
   overflow-x: hidden;
+}
+@media screen and (max-width: 540px) {
+  .p-review_box {
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
 .p-arrow {
