@@ -53,8 +53,11 @@
 }
 
 .p-preface{
-  padding-left: 50%;
+  padding-left: 45%;
   margin-top: 5%;
+  @include m.mq(pc) {
+    padding-left: 45%;
+  }
   @include m.mq(tab) {
     padding-left: 10%;
     display: grid;
@@ -66,18 +69,11 @@
     line-height: 2.5;
     text-align: left;
     width: 74%;
-    font-size: 1.3vw;
     @include m.mq(tab) {
       width: 100%;
       text-align: left;
-      font-size: 2vw;
     }
-    @include m.mq(tab) {
-      font-size: 2.5vw;
+    @include m.mq(sp) {
     }
   }
 }
-
-// *{
-//   border:  1px solid red;
-// }

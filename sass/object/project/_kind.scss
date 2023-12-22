@@ -26,7 +26,7 @@
   }
   &_mainimg{
     width: 48%;
-    padding-top: 56px;
+    padding-top: 64px;
     @include m.mq(sp) {
       width: 100%;
       padding-top: 0;
@@ -47,6 +47,7 @@
     &_text{
       p{
         color: #D7E8E8;
+        font-weight: 100;
       }
     }
     &_box{
@@ -56,6 +57,25 @@
     flex-wrap: wrap;
     @include m.mq(sp) {
       width: 100%;
+    }
+    a{
+      width: 48%;
+      height: 30%;
+      text-decoration: none;
+      color: #4D5454;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include m.mq(sp) {
+        width: 45%;
+        
+      }
+      &:nth-child(3){
+          margin: 5% 0;
+      }
+      &:nth-child(4){
+          margin: 5% 0;
+      }
     }
     }
   }

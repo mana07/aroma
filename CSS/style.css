@@ -265,9 +265,9 @@ body {
 .c-button {
   background-color: #B7B8B8;
   border: 2px solid #2F3333;
-  padding: 1% 2% 9% 2%;
-  width: 44%;
-  height: 10%;
+  padding: 1% 2% 0 2%;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -280,16 +280,7 @@ body {
 }
 .c-button:hover {
   cursor: pointer;
-}
-@media screen and (max-width: 540px) {
-  .c-button:nth-child(3) {
-    margin: 5% 0;
-  }
-}
-@media screen and (max-width: 540px) {
-  .c-button:nth-child(4) {
-    margin: 5% 0;
-  }
+  border: 2px solid #B7B8B8;
 }
 .c-button p {
   font-family: "ta-oonishi", sans-serif;
@@ -298,14 +289,13 @@ body {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding-right: 10%;
-  font-size: 2vw;
+  padding: 5% 10% 0 0;
   z-index: 5;
   position: relative;
 }
 @media screen and (max-width: 540px) {
   .c-button p {
-    font-size: 4vw;
+    padding-top: 0;
     margin: 8% 0;
   }
 }
@@ -368,7 +358,6 @@ body {
 }
 
 .c-sbttl {
-  font-size: 2vw;
   font-weight: bold;
   display: -webkit-box;
   display: -webkit-flex;
@@ -384,30 +373,17 @@ body {
 @media screen and (max-width: 768px) {
   .c-sbttl {
     padding-left: 0;
-    font-size: 4vw;
-  }
-}
-@media screen and (max-width: 540px) {
-  .c-sbttl {
-    font-size: 5vw;
   }
 }
 
 .c-ttl {
-  font-size: 2vw;
   padding-top: 10%;
   padding-bottom: 5%;
   text-align: center;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
-  .c-ttl {
-    font-size: 3.5vw;
-  }
-}
 @media screen and (max-width: 540px) {
   .c-ttl {
-    font-size: 5vw;
     padding-top: 20%;
     padding-bottom: 10%;
   }
@@ -550,16 +526,15 @@ body {
           align-self: center;
   width: 25%;
   z-index: 5;
-  font-size: 2vw;
 }
 @media screen and (max-width: 768px) {
   .c-method h2 {
-    font-size: 3vw;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 540px) {
   .c-method h2 {
-    font-size: 5vw;
+    font-size: 2.5rem;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -570,16 +545,14 @@ body {
   width: 70%;
   text-align: left;
   padding: 3% 6% 3% 0;
-  font-size: 1.3vw;
 }
 @media screen and (max-width: 768px) {
   .c-method p {
-    font-size: 2vw;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 540px) {
   .c-method p {
-    font-size: 2.5vw;
     margin: 0 auto 5% auto;
     padding-right: 0;
     padding-bottom: 5%;
@@ -644,16 +617,9 @@ body {
   }
 }
 .c-item_p h2 {
-  font-size: 2.2vw;
   text-align: center;
 }
-@media screen and (max-width: 540px) {
-  .c-item_p h2 {
-    font-size: 4vw;
-  }
-}
 .c-item_p p {
-  font-size: 1.6vw;
   font-family: "ta-oonishi", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -664,8 +630,8 @@ body {
 }
 @media screen and (max-width: 540px) {
   .c-item_p p {
-    font-size: 2.5vw;
-    padding-left: 30%;
+    font-size: 1.4rem;
+    padding-left: 15%;
   }
 }
 
@@ -968,8 +934,13 @@ body {
 }
 
 .p-preface {
-  padding-left: 50%;
+  padding-left: 45%;
   margin-top: 5%;
+}
+@media screen and (min-width: 960px) {
+  .p-preface {
+    padding-left: 45%;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-preface {
@@ -987,21 +958,13 @@ body {
   line-height: 2.5;
   text-align: left;
   width: 74%;
-  font-size: 1.3vw;
 }
 @media screen and (max-width: 768px) {
   .p-preface p {
     width: 100%;
     text-align: left;
-    font-size: 2vw;
   }
 }
-@media screen and (max-width: 768px) {
-  .p-preface p {
-    font-size: 2.5vw;
-  }
-}
-
 .p-effect {
   background-image: url(https://github.com/mana07/aroma/blob/main/images/background3.png?raw=true);
   background-repeat: no-repeat;
@@ -1109,7 +1072,7 @@ body {
 }
 .p-fgr_mainimg {
   width: 48%;
-  padding-top: 56px;
+  padding-top: 64px;
 }
 @media screen and (max-width: 540px) {
   .p-fgr_mainimg {
@@ -1139,6 +1102,7 @@ body {
 }
 .p-fgr .p-button_text p {
   color: #D7E8E8;
+  font-weight: 100;
 }
 .p-fgr .p-button_box {
   width: 100%;
@@ -1158,6 +1122,35 @@ body {
   .p-fgr .p-button_box {
     width: 100%;
   }
+}
+.p-fgr .p-button_box a {
+  width: 48%;
+  height: 30%;
+  text-decoration: none;
+  color: #4D5454;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 540px) {
+  .p-fgr .p-button_box a {
+    width: 45%;
+  }
+}
+.p-fgr .p-button_box a:nth-child(3) {
+  margin: 5% 0;
+}
+.p-fgr .p-button_box a:nth-child(4) {
+  margin: 5% 0;
 }
 
 .p-online {
@@ -1227,7 +1220,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  max-width: 960px;
   scroll-behavior: smooth;
   scroll-snap-align: center;
   -webkit-scroll-snap-type: both mandatory;
@@ -1382,4 +1374,61 @@ body {
 
 .u-backcolor_gray {
   background-color: #99A0A3;
+}
+
+p {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 960px) {
+  p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 960px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

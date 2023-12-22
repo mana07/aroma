@@ -144,3 +144,9 @@ $(function(){
     $(".sp-menu").removeClass('active');
   });
 });
+
+$('.p-button_box a').click(function(){//c-buttonあるいは海、くらげ、建物をクリック
+ $('#image > img').attr('src',$(this).attr('href'))//ul外にあるp要素に囲まれたimgのsrcを取得して、そこにhrefの情報を入れる。
+  .attr('alt',$(this).text());//altには
+  return false;
+});
