@@ -42,7 +42,7 @@ $(function(){
   //   return false
   // });
   $(window).scroll(function(){
-    var scrollAnimationElm=document.querySelectorAll('.scroll-up,.scroll-left,.scroll-right,.zoomIn,.whiteline-box,.whiteline-box2');
+    var scrollAnimationElm=document.querySelectorAll('.scroll-up,.scroll-left,.scroll-right,.zoomIn');
     var scrollanimationFunc=function(){
       for(var i=0;i<scrollAnimationElm.length;i++){
         var triggermargin=100;

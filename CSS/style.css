@@ -109,6 +109,22 @@ body {
     opacity: 1;
   }
 }
+@-webkit-keyframes blinkText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blinkText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .l-footer {
   text-align: center;
   margin-bottom: 17px;
@@ -538,7 +554,7 @@ body {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    width: 30%;
+    width: 40%;
   }
 }
 .c-method p {
@@ -684,8 +700,60 @@ body {
 @media screen and (max-width: 540px) {
   .c-info {
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
+}
+.c-info a {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 20px;
+  line-height: 5px;
+  margin: 0 auto;
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  color: #414747;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.c-info a::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+.c-info a::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: -2px;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+.c-info a:hover {
+  color: #414747;
+}
+.c-info a:hover::before {
+  width: 100%;
+  height: 100%;
+  border-top-color: #414747;
+  border-right-color: #414747;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.c-info a:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom-color: #414747;
+  border-left-color: #414747;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
 .c-sns {
@@ -1074,6 +1142,11 @@ body {
   width: 48%;
   padding-top: 64px;
 }
+@media screen and (max-width: 768px) {
+  .p-fgr_mainimg {
+    padding-top: 42px;
+  }
+}
 @media screen and (max-width: 540px) {
   .p-fgr_mainimg {
     width: 100%;
@@ -1103,6 +1176,12 @@ body {
 .p-fgr .p-button_text p {
   color: #D7E8E8;
   font-weight: 100;
+  -webkit-animation: blinkText 1s ease infinite;
+  animation: blinkText 1s ease infinite;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-delay: both;
+          animation-delay: both;
 }
 .p-fgr .p-button_box {
   width: 100%;
@@ -1299,18 +1378,26 @@ body {
   color: #D7E8E8;
 }
 .p-cont_concept a {
-  border: 1px solid #D7E8E8;
-  padding: 3% 5%;
+  color: #D7E8E8;
   cursor: pointer;
 }
+.p-cont_concept a:hover {
+  color: #D7E8E8;
+}
+.p-cont_concept a:hover::before {
+  border-top-color: #D7E8E8;
+  border-right-color: #D7E8E8;
+}
+.p-cont_concept a:hover::after {
+  border-bottom-color: #D7E8E8;
+  border-left-color: #D7E8E8;
+}
 .p-cont_history {
+  color: #4D5454;
   background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
 }
-.p-cont_history a {
-  border: 1px solid #4D5454;
-  padding: 3% 5%;
-}
 .p-cont_shop {
+  color: #4D5454;
   background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
 }
 @media screen and (max-width: 540px) {
@@ -1319,13 +1406,26 @@ body {
     color: #D7E8E8;
   }
 }
-.p-cont_shop a {
-  border: 1px solid #4D5454;
-  padding: 3% 5%;
-}
 @media screen and (max-width: 540px) {
   .p-cont_shop a {
-    border: 1px solid #D7E8E8;
+    color: #D7E8E8;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-cont_shop a:hover {
+    color: #D7E8E8;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-cont_shop a:hover::before {
+    border-top-color: #D7E8E8;
+    border-right-color: #D7E8E8;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-cont_shop a:hover::after {
+    border-bottom-color: #D7E8E8;
+    border-left-color: #D7E8E8;
   }
 }
 .p-cont_sns {
@@ -1430,5 +1530,14 @@ h2 {
 @media screen and (max-width: 540px) {
   h2 {
     font-size: 2.5rem;
+  }
+}
+
+a {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

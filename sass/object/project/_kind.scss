@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "./../../foundation/animation";
 
 .p-kind{
   background-color: #4D5454;
@@ -27,6 +28,9 @@
   &_mainimg{
     width: 48%;
     padding-top: 64px;
+    @include m.mq(tab) {
+      padding-top: 42px;
+    }
     @include m.mq(sp) {
       width: 100%;
       padding-top: 0;
@@ -48,6 +52,7 @@
       p{
         color: #D7E8E8;
         font-weight: 100;
+        @include animation.animation(blinkText 1s ease infinite);
       }
     }
     &_box{
@@ -68,7 +73,6 @@
       align-items: center;
       @include m.mq(sp) {
         width: 45%;
-        
       }
       &:nth-child(3){
           margin: 5% 0;

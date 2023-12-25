@@ -19,31 +19,65 @@
     background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
     color: #D7E8E8;
     a{
-      border: 1px solid #D7E8E8;
-      padding: 3% 5%;
+      color: #D7E8E8;
       cursor: pointer;
+      &:hover{
+        color: #D7E8E8;
+        &::before{
+          border-top-color: #D7E8E8;
+          border-right-color: #D7E8E8;
+        }
+        &::after{
+          border-bottom-color: #D7E8E8;
+          border-left-color: #D7E8E8;
+        }
+      }
     }
   }
   &_history{
+    color: #4D5454;
     background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
-    a{
-      border: 1px solid #4D5454;
-      padding: 3% 5%;
-    }
+    // a{
+    //   border: 1px solid #4D5454;
+    //   padding: 3% 5%;
+    // }
   }
   &_shop{
+    color: #4D5454;
     background-image: url(https://github.com/mana07/aroma/blob/main/images/white.png?raw=true);
     @include m.mq(sp) {
       background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);
       color: #D7E8E8;
     }
     a{
-      border: 1px solid #4D5454;
-      padding: 3% 5%;
       @include m.mq(sp) {
-        border: 1px solid #D7E8E8;
+      color: #D7E8E8;
+      }
+      &:hover{
+        @include m.mq(sp) {
+        color: #D7E8E8;
+        }
+        &::before{
+          @include m.mq(sp) {
+          border-top-color: #D7E8E8;
+          border-right-color: #D7E8E8;
+          }
+        }
+        &::after{
+          @include m.mq(sp) {
+          border-bottom-color: #D7E8E8;
+          border-left-color: #D7E8E8;
+          }
+        }
       }
     }
+    // a{
+    //   border: 1px solid #4D5454;
+    //   padding: 3% 5%;
+    //   @include m.mq(sp) {
+    //     border: 1px solid #D7E8E8;
+    //   }
+    // }
   }
   &_sns{
     background-image: url(https://github.com/mana07/aroma/blob/main/images/black.png?raw=true);

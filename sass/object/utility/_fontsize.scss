@@ -39,3 +39,10 @@ h2{
   }
 }
 
+a{
+  font-size: 1.6rem;
+  @include m.mq(tab) {
+    font-size: 1.2rem;
+  }
+}
+
