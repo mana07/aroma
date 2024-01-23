@@ -11,9 +11,17 @@
       object-fit: cover;
       @include m.mq(tab) {
         height: 100vh;
-         object-position: -100px;
+        object-position: -100px;
       }
     }
+   #aroma{
+    text-decoration: none;
+    margin: 13px 0 13px 15px;
+    position: fixed;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.8rem;
+   }
   .l-nav{
       display: flex;
       flex-wrap: wrap;

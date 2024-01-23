@@ -154,6 +154,14 @@ body {
        object-position: -100px;
   }
 }
+.l-header #aroma {
+  text-decoration: none;
+  margin: 13px 0 13px 15px;
+  position: fixed;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.8rem;
+}
 .l-header .l-nav {
   display: -webkit-box;
   display: -webkit-flex;
