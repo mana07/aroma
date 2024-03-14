@@ -1020,7 +1020,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .p-preface {
-    padding-left: 10%;
+    padding-left: 6%;
     display: grid;
     grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
