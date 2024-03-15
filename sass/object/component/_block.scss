@@ -202,10 +202,34 @@
 
 .c-sns{
   text-align: center;
+  display: flex;
+  justify-content: center;
   #Twitter{
     width: 5%;
+    @include m.mq(sp) {
+      display: none;
+    }
   }
   #Insta{
     width: 5%;
+    margin-left: 2%;
+    @include m.mq(sp) {
+      display: none;
+    }
+  }
+  #Twitter-sp{
+    width: 5%;
+    display: none;
+    @include m.mq(sp) {
+      display: flex;
+    }
+  }
+  #Insta-sp{
+    width: 5%;
+    margin-left: 2%;
+    display: none;
+    @include m.mq(sp) {
+      display: flex;
+    }
   }
 }

@@ -117,6 +117,14 @@
     position: absolute;
     top: -25%;
     left: 13%;
+    @include m.mq(tab) {
+      width: 8%;
+      left: 25%;
+    }
+    @include m.mq(sp) {
+      width: 9%;
+      left: 19%;
+    }
   }
   
   a{

@@ -75,5 +75,18 @@
     }
     @include m.mq(sp) {
     }
+    &:nth-child(1){
+      font-size: 2rem;
+      font-weight: bold;
+      @include m.mq(pc) {
+        font-size: 3rem;
+      }
+      @include m.mq(tab) {
+        font-size: 2rem;
+      }
+      @include m.mq(sp) {
+        font-size: 2.5rem;
+      }
+    }
   }
 }

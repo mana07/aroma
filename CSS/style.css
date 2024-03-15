@@ -261,7 +261,7 @@ body {
 }
 @media screen and (max-width: 540px) {
   .l-header_title p {
-    font-size: 12vw;
+    font-size: 8vw;
   }
 }
 .l-header_title p:nth-child(1) {
@@ -766,12 +766,56 @@ body {
 
 .c-sns {
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .c-sns #Twitter {
   width: 5%;
 }
+@media screen and (max-width: 540px) {
+  .c-sns #Twitter {
+    display: none;
+  }
+}
 .c-sns #Insta {
   width: 5%;
+  margin-left: 2%;
+}
+@media screen and (max-width: 540px) {
+  .c-sns #Insta {
+    display: none;
+  }
+}
+.c-sns #Twitter-sp {
+  width: 5%;
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .c-sns #Twitter-sp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.c-sns #Insta-sp {
+  width: 5%;
+  margin-left: 2%;
+  display: none;
+}
+@media screen and (max-width: 540px) {
+  .c-sns #Insta-sp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .sp-nav .openbtn {
@@ -931,6 +975,18 @@ body {
   top: -25%;
   left: 13%;
 }
+@media screen and (max-width: 768px) {
+  .p-burger img {
+    width: 8%;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-burger img {
+    width: 9%;
+    left: 19%;
+  }
+}
 .p-burger a {
   padding: 3%;
   font-size: 1.3vw;
@@ -1020,7 +1076,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .p-preface {
-    padding-left: 6%;
+    padding-left: 10%;
     display: grid;
     grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
@@ -1041,6 +1097,26 @@ body {
     text-align: left;
   }
 }
+.p-preface p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 960px) {
+  .p-preface p:nth-child(1) {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-preface p:nth-child(1) {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .p-preface p:nth-child(1) {
+    font-size: 2.5rem;
+  }
+}
+
 .p-effect {
   background-image: url(https://github.com/mana07/aroma/blob/main/images/background3.png?raw=true);
   background-repeat: no-repeat;
@@ -1090,6 +1166,7 @@ body {
     margin-bottom: 10%;
   }
 }
+
 .p-method {
   margin-bottom: 10%;
 }
